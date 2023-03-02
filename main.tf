@@ -4,7 +4,7 @@ provider "aws" {
 
 
 module "module" {
-  source = "C:\\Users\\HouanC\\terraform-wssdev-module\\module"
+  source = "github.com/a505036987/aws-terraform-module-rovpc/module"
 
   wssdev-vpc         = "10.158.96.0/20"
   aws_region         = "eu-central-1"
