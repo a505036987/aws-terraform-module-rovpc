@@ -1,5 +1,10 @@
-module "vpc" {
-  source = "https://github.com/a505036987/aws-terraform-module-rovpc/module"
+provider "aws" {
+  region = "eu-central-1"
+}
+
+
+module "module" {
+  source = "C:\\Users\\HouanC\\terraform-wssdev-module\\module"
 
   wssdev-vpc         = "10.158.96.0/20"
   aws_region         = "eu-central-1"
