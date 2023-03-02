@@ -1,5 +1,5 @@
 variable "wssdev-vpc" {
-  default = "10.158.96.0/20"
+  type = string
 }
 
 variable "aws_region" {
@@ -9,15 +9,12 @@ variable "aws_region" {
 
 variable "public_sn_count" {
   type    = number
-  default = 2
 }
 
 variable "private_sn_count" {
   type    = number
-  default = 2
 }
 
 variable "workspace_sn_count" {
   type    = number
-  default = 2
 }
